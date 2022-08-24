@@ -11,7 +11,7 @@ if ENV == 'dev':
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://@localhost/wine'
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://hnyedvvhiidmnp:5dd19938724ca81ec0775347d2f1b921fd61176903632cc5d887af67ce7a5c19@ec2-44-199-26-122.compute-1.amazonaws.com:5432/d8o56skvrh88n4'.replace("://", "ql://", 1)
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'DB'.replace("://", "ql://", 1)
 
 app.config['SQLALCHEMY_TRACK_MODIFCATIONS']=False
 
